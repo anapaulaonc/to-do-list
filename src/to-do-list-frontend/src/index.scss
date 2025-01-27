@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 100%;
   max-width: 800px;
   min-height: 70%; /* Para ocupar parte vertical da tela */
   padding: 20px;
@@ -34,11 +34,13 @@ h1 {
 }
 
 form {
+  padding: 0px 10px;
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
 input[type="text"] {
@@ -52,6 +54,7 @@ input[type="text"] {
 
 button[type="submit"] {
   padding: 10px 20px;
+  margin: auto;
   font-size: 1.2rem;
   font-family: 'Patrick Hand', 'Comic Sans MS', cursive;
   background-color: #f4e04d;
