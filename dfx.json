@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "to-do-list-backend": {
+      "main": "src/to-do-list-backend/main.mo",
+      "type": "motoko"
+    },
+    "to-do-list-frontend": {
+      "dependencies": [
+        "to-do-list-backend"
+      ],
+      "source": [
+        "src/to-do-list-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "to-do-list-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
